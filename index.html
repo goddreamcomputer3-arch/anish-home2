@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ESP32 Controller</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+    <div class="card">
+        <h1>Device Control</h1>
+        <div id="statusBadge" class="status-badge offline">Offline</div>
+
+        <div id="authBox">
+            <input id="emailField" type="email" placeholder="Email">
+            <input id="passwordField" type="password" placeholder="Password">
+            <button id="loginBtn" class="btn">Login</button>
+        </div>
+
+        <div id="controlBox" style="display:none;">
+            <button id="btn2" class="gpio-button">LED (Pin 2)</button>
+            <p id="status2">Status: OFF</p>
+            
+            <button id="btn21" class="gpio-button">Device 1 (Pin 21)</button>
+            <p id="status21">Status: OFF</p>
+            
+            <button id="btn22" class="gpio-button">Device 2 (Pin 22)</button>
+            <p id="status22">Status: OFF</p>
+            
+            <br>
+            <button id="logoutBtn" class="btn">Logout</button>
+        </div>
+    </div>
+</body>
+</html>
